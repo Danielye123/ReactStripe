@@ -18,7 +18,7 @@ export function CartProdvider({children}){
     function getProductQuantity(id){
         const quantity = cartProducts.find(product => product.id === id)?.quantity
         
-        if(quantity === undefiend) {
+        if(quantity === undefined) {
             return 0;
         }
 
